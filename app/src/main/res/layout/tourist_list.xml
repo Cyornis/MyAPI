@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/relativelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal_200"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Anjali"
+        android:layout_toRightOf="@+id/cardview"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tourist_location"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="INDIA"
+        android:layout_toRightOf="@+id/cardview"
+        android:layout_below="@+id/name"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tourist_id"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_toRightOf="@+id/cardview"
+        android:layout_below="@+id/tourist_location"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/name"
+        android:text="DELETE"
+        android:background="@color/white"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
